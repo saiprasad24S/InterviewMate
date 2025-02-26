@@ -1,0 +1,9 @@
+Django==4.2.2
+django-cors-headers
+Werkzeug
+python-dotenv
+google-generativeai
+chardet
+PyPDF2
+pdfminer.six
+gtts
