@@ -7,7 +7,7 @@ import google.generativeai as genai
 import re
 
 # Configure Generative AI
-genai.configure(api_key="AIzaSyBZB86QbtDRpB3hkBkQcjsvpHJdMv03Viw")  # Replace with your actual API key
+genai.configure(api_key=" # Replace with your actual API key") 
 model = genai.GenerativeModel("gemini-1.5-flash")
 
 def index(request):
