@@ -9,15 +9,17 @@ import io
 from pdfminer.high_level import extract_text
 import google.generativeai as genai
 import re
+from dotenv import load_dotenv
 
-# Configure Generative AI
-genai.configure(api_key="AIzaSyBZB86QbtDRpB3hkBkQcjsvpHJdMv03Viw")
+
+load_dotenv()
+genai.configure(os.getenv('API_KEY'))
 model = genai.GenerativeModel("gemini-1.5-flash")
 
-# Path to JSON file for storing user data
+
 USER_DATA_FILE = os.path.join(os.path.dirname(__file__), 'users.json')
 
-# Load users from JSON
+
 def load_users():
     if not os.path.exists(USER_DATA_FILE):
         return []
