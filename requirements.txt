@@ -7,3 +7,22 @@ chardet
 PyPDF2
 pdfminer.six
 gtts
+
+# TensorFlow & Dependencies
+tensorboard
+tensorboard-plugin-wit
+tensorflow
+tensorflow-estimator
+termcolor
+numpy==1.23.5
+h5py
+
+# Data Science & ML Libraries
+pandas
+matplotlib
+seaborn
+scikit-learn
+
+# OpenCV
+opencv-python
+opencv-contrib-python

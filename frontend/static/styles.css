@@ -1,0 +1,382 @@
+/* General Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+}
+
+body.resume-upload {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+/* Navbar Styling */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #007bff !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    color: #fff !important;
+    font-weight: bold;
+}
+
+.navbar-brand:hover {
+    color: #e0e0e0 !important;
+}
+
+.nav-item .btn {
+    color: white !important;
+    background-color: #007bff !important;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-item .btn:hover {
+    background-color: #0056b3 !important;
+    transform: scale(1.05);
+}
+
+/* Timer Display */
+#timer-display {
+    font-size: 1.1rem;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 5px 15px;
+    border-radius: 20px;
+}
+
+/* Hero Section (if applicable elsewhere) */
+.hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+/* Content Section */
+.content {
+    margin-top: 80px;
+    padding: 20px;
+}
+
+/* Feature Section (if applicable) */
+.feature {
+    padding: 20px;
+    text-align: center;
+}
+
+.feature-img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+/* Mock Interview Section (if applicable) */
+.mock-interview {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.mock-interview .btn {
+    margin: 10px;
+}
+
+/* Steps Section (if applicable) */
+.steps {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.step {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Card Styling */
+.card {
+    border-radius: 15px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Form Styling */
+.form-control {
+    border-radius: 8px;
+    padding: 10px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+#interview-duration {
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+/* Button Styling */
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 12px 20px;
+    font-weight: 600;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Question Display */
+#question-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    position: static;
+    width: 100%;
+    background: #f8f9fa;
+    padding: 20px;
+}
+
+#questionContainer {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    animation: fadeInScale 1.5s ease-in-out;
+}
+
+#questionContainer h2 {
+    color: #28a745;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+#questionContainer p {
+    font-size: 1.2em;
+    color: #333;
+    margin: 0;
+}
+
+/* Feedback Display */
+#feedback-display {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-height: 50vh;
+    overflow-y: auto;
+    text-align: left;
+    font-size: 1rem;
+    color: #333;
+    width: 80%;
+    max-width: 800px;
+    margin-top: 20px;
+}
+
+#feedback-display h3 {
+    margin-bottom: 20px;
+    color: #007bff;
+    font-size: 1.5rem;
+}
+
+.feedback-item {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+.feedback-item p {
+    margin: 5px 0;
+}
+
+.feedback-item strong {
+    color: #007bff;
+}
+
+/* Chart Styling */
+#performanceChart {
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+}
+
+/* Login Container (if applicable) */
+.login-container {
+    max-width: 400px;
+    width: 100%;
+    background: white;
+    border-radius: 10px;
+}
+
+/* About Us Section (if applicable) */
+.about-us {
+    background-color: #f9f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+.about-us header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.about-us header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.about-us nav {
+    background-color: #333;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.about-us nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+.about-us nav a:hover {
+    color: #007bff;
+}
+
+.about-us main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-us #about-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-us #about-content h2 {
+    color: #007bff;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.about-us #about-content p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+.about-us #about-content strong {
+    color: #007bff;
+}
+
+.about-us footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 40px;
+}
+
+.about-us footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Footer (if applicable) */
+.footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Video Box (if applicable) */
+#video-box {
+    z-index: 1001; /* Above navbar */
+}
+
+/* Animation */
+@keyframes fadeInScale {
+    0% { opacity: 0; transform: scale(0.9); }
+    100% { opacity: 1; transform: scale(1); }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    #questionContainer {
+        font-size: 1.4rem;
+        padding: 15px;
+    }
+
+    #questionContainer h2 {
+        font-size: 1.6rem;
+    }
+
+    #questionContainer p {
+        font-size: 1em;
+    }
+
+    #feedback-display {
+        width: 90%;
+        font-size: 0.9rem;
+    }
+
+    #feedback-display h3 {
+        font-size: 1.3rem;
+    }
+
+    #performanceChart {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+
+    #timer-display {
+        font-size: 0.9rem;
+        padding: 3px 10px;
+    }
+}
